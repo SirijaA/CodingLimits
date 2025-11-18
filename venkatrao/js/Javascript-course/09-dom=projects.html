@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM projects</title>
+</head>
+<body>
+  <p>Youtube Subscribe button</p>
+  <button onclick="
+    subscribe();
+  "class="js-subscribe-button">Subscribe
+  </button>
+  <script>
+    function subscribe(){
+      const buttonSymbol=document.querySelector('.js-subscribe-jbutton');
+      if(buttonSymbol.innerText==='Subscribe'){
+        buttonSymbol.innerHTML='Subscribed';
+      }else{
+        buttonSymbol.innerHTML='Subscribe';
+      }
+    }
+  </script>
+</body>
+</html>
